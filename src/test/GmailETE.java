@@ -19,7 +19,7 @@ public class GmailETE {
   static Properties prop = new Properties();
 
   public static void main(String[] Args) throws InterruptedException, IOException, AWTException {
-// Call browser method
+///Call browser method
     browser();
 // Call Property file method
     propertyFile();
