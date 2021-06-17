@@ -65,7 +65,7 @@ public class GmailETE {
 //  Verify logged in UserID and compare with actual value and Excepted value
     assertAttributeValueOfElementByClass(driver);
 
-    WebElement ActualTitle = driver.findElement(By.className("gb_ob"));
+    WebElement ActualTitle = driver.findElement(By.className("gb_nb"));
 
     String ExceptedTitle = "ouchdemo1@gmail.com";
     if (ActualTitle.equals(ExceptedTitle)) {
@@ -113,7 +113,7 @@ public class GmailETE {
 
 // Re verify userID and compare Excepted and Actual value
 
-    WebElement ActualTitle2 = driver.findElement(By.className("gb_ob"));
+    WebElement ActualTitle2 = driver.findElement(By.className("gb_nb"));
     String ExceptedTitle2 = "ouchdemo1@gmail.com";
     if (ActualTitle2.equals(ExceptedTitle2)) {
       currentpagetitle("user logged in  is matching");
@@ -151,7 +151,7 @@ public class GmailETE {
   }
 
   private static void assertAttributeValueOfElementByClass(WebDriver driver) {
-    driver.findElement(By.className("gb_ob"));
+    driver.findElement(By.className("gb_nb"));
   }
 
   private static void assertAttributeValueOfElementByID(WebDriver driver, By identifierId, String email) {
