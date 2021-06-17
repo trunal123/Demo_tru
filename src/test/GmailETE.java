@@ -170,6 +170,7 @@ public class GmailETE {
   private static void browser() {
     System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/src/main/resources/chromedriver.exe");
     currentpagetitle("Chrome invoked");
+    System.out.println("Chrome successfully open");
   }
 
   private static void propertyFile() throws IOException {
